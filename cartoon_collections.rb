@@ -21,4 +21,7 @@ def find_the_cheese(strings)
       return string
     end
   end
+  if strings.any? {|string| cheese_types.include?(string)} == false
+    return nil
+  end
 end
